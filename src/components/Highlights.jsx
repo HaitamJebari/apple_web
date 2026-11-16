@@ -1,5 +1,4 @@
 import { useGSAP } from '@gsap/react'
-import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import gsap from 'gsap'
 
@@ -10,7 +9,7 @@ const Highlights = () => {
   useGSAP(() => {
      gsap.to(['.left-column','.right-column'], {
       scrollTrigger: {
-        trigger: '#hightlights',
+        trigger: '#highlights',
         start: isMobile ? 'bottom bottom' : 'top top'
       },
       y: 0,
